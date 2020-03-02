@@ -127,7 +127,7 @@ new_array = []
       # :release_year=>source[index][:movies][title_index][:worldwide_gross], 
       # :studio=>source[index][:movies][title_index][:worldwide_gross], 
       # :director_name => source[index][:name]} 
-            movie_with_director_name(source[index][:name], source[index][:movies][title_index][:title])
+            new_hash = movie_with_director_name(source[index][:name], source[index][:movies][title_index][:title])
       new_array << [new_hash]
       binding.pry
       title_index += 1
