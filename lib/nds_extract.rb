@@ -128,8 +128,8 @@ new_array = []
       # :studio=>source[index][:movies][title_index][:worldwide_gross], 
       # :director_name => source[index][:name]} 
             new_hash = movie_with_director_name(source[index][:name], source[index][:movies][title_index][:title])
+            binding.pry
       new_array << [new_hash]
-      binding.pry
       title_index += 1
     end
     title_index = 0
